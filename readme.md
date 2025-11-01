@@ -12,7 +12,7 @@ Le projet contient trois fichiers CSV :
 
 ## Conception du diagramme
 
-![diagramme](images/database.png)
+![diagramme](images/diagramme.png)
 
 Le diagramme est comme suit dans l'image ; nous avons une table SQL par fichier CSV, elles sont reliées à la table finale par des relations 0.1:n et sont reliées entre elles par les noms des clients. Malheureusement, les différents outils ne sont pas reliés pour les noms clients, ce qui fausse les jointures.
 
@@ -170,4 +170,5 @@ Les données sont ensuite envoyées directement dans la nouvelle base de donnée
 - Parraléliser les trois premiers jobs pour gagner du temps et choisir en amont les lignes à traiter
 - La pipeline travaille en 6 secondes actuellement, il doit être possible de travailler en 2/3 secondes avec ces améliorations
 - Ajouter des logs pour traiter les erreurs
+
 - Réfléchir à un autre axe où on place les infos vides dans un autre fichier
